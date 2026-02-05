@@ -34,9 +34,8 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            gap: 2rem;
         }
 
         nav a {
@@ -47,6 +46,11 @@
 
         nav a:hover {
             text-decoration: underline;
+        }
+
+        nav div {
+            display: flex;
+            gap: 2rem;
         }
 
         .logo {
@@ -196,8 +200,10 @@
     <header>
         <nav class="container">
             <a href="#" class="logo">GnG Makeup Store</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <div>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
